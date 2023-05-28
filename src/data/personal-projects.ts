@@ -8,7 +8,7 @@ export const personalProjects = [
     [
       "SCORE BOX is a mobile app that allows you to create your scorecard of boxing fights." +
         " You can also share your scorecard with others.",
-      "It has been downloaded in total 7000+ on the App Store and Google Play.",
+      "It has been downloaded in total over 7000 on the App Store and Google Play.",
       "You can see the posts that its users shared on Twitter with the hashtag #SCORE_BOX_APP.",
     ],
     "https://score-box-link.web.app/",
