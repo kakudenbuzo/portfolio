@@ -15,7 +15,7 @@ export default function Home() {
           Musashi Tsunoda
         </h1>
         <h2 className="text-lg font-medium mt-3">Web application engineer</h2>
-        <div className="text-base text-slate-400 mt-4">
+        <div className="text-base text-slate-500 mt-4">
           <p className="max-w-xs">
             I am a web application engineer in Tokyo. I love product development
             and I am interested in the process of creating products that people
@@ -81,7 +81,7 @@ export default function Home() {
           ))}
         </ul>
       </section>
-      <footer className="mt-24 text-slate-400 text-center">
+      <footer className="mt-24 text-slate-500 text-center">
         <span className="hover:text-black underline">
           <a href="https://github.com/kakudenbuzo/portfolio" target="_blank">
             <FontAwesomeIcon size="sm" icon={faGithub} className="mr-1" />

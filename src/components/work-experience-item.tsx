@@ -13,7 +13,7 @@ const WorkExperienceItem: React.FC<MyComponentProps> = ({ workExperience }) => {
   const isShorten = workExperience.description.length > 2;
   return (
     <div>
-      <p className="text-base text-slate-400">{workExperience.duration}</p>
+      <p className="text-base text-slate-500">{workExperience.duration}</p>
       <h3 className="mt-3 text-lg hover:underline">
         <a href={workExperience.link} target="_blank">
           {workExperience.role} - {workExperience.companyName}
@@ -24,7 +24,7 @@ const WorkExperienceItem: React.FC<MyComponentProps> = ({ workExperience }) => {
           />
         </a>
       </h3>
-      <div className="max-w-xs mt-1 text-slate-400">
+      <div className="max-w-xs mt-1 text-slate-500">
         {workExperience.description.map((line, i) => {
           if (showMore) return <p key={i}>{line}</p>;
           else if (i == 1 && i + 1 < workExperience.description.length)

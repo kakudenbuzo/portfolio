@@ -29,7 +29,7 @@ const PersonalProjectItem: React.FC<MyComponentProps> = ({
           </a>
         </h3>
       </div>
-      <div className="max-w-xs mt-4 text-slate-400">
+      <div className="max-w-xs mt-4 text-slate-500">
         {personalProject.description.map((line, i) => (
           <p key={i}>{line}</p>
         ))}
