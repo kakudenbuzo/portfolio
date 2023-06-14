@@ -13,8 +13,10 @@ const WorkExperienceItem: React.FC<MyComponentProps> = ({ workExperience }) => {
   const isShorten = workExperience.description.length > 2;
   return (
     <div>
-      <p className="text-base text-slate-500">{workExperience.duration}</p>
-      <h3 className="mt-3 text-lg hover:underline">
+      <p className="text-base text-slate-500 dark:text-slate-400">
+        {workExperience.duration}
+      </p>
+      <h3 className="mt-3 text-lg hover:underline dark:text-white">
         <a href={workExperience.link} target="_blank">
           {workExperience.role} - {workExperience.companyName}
           <FontAwesomeIcon
@@ -24,7 +26,7 @@ const WorkExperienceItem: React.FC<MyComponentProps> = ({ workExperience }) => {
           />
         </a>
       </h3>
-      <div className="max-w-xs mt-1 text-slate-500">
+      <div className="max-w-xs mt-1 text-slate-500 dark:text-slate-400">
         {workExperience.description.map((line, i) => {
           if (showMore) return <p key={i}>{line}</p>;
           else if (i == 1 && i + 1 < workExperience.description.length)
@@ -34,7 +36,7 @@ const WorkExperienceItem: React.FC<MyComponentProps> = ({ workExperience }) => {
         })}
       </div>
       {!showMore && isShorten && (
-        <div className="max-w-xs mt-1 text-end text-slate-500">
+        <div className="max-w-xs mt-1 text-end text-slate-500 dark:text-slate-400">
           <span className="hover:text-black">
             <button onClick={showMoreHandler}>... Show more</button>
           </span>
@@ -44,7 +46,7 @@ const WorkExperienceItem: React.FC<MyComponentProps> = ({ workExperience }) => {
       <ul className="mt-2 flex flex-wrap max-w-xs">
         {workExperience.skills.map((skil) => (
           <li className="mr-1.5 mt-2" key={skil}>
-            <p className="flex items-center rounded-full bg-green-500 px-3 py-1 text-xs font-medium leading-5 text-white">
+            <p className="flex items-center rounded-full bg-green-500 px-3 py-1 text-xs font-medium leading-5 text-white dark:bg-green-600">
               {skil}
             </p>
           </li>

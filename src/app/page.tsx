@@ -11,11 +11,13 @@ export default function Home() {
   return (
     <main className="max-w-5xl mx-auto pt-12 px-6 pb-8">
       <header>
-        <h1 className="text-4xl font-bold" id="about">
+        <h1 className="text-4xl font-bold dark:text-white" id="about">
           Musashi Tsunoda
         </h1>
-        <h2 className="text-lg font-medium mt-3">Web application engineer</h2>
-        <div className="text-base text-slate-500 mt-4">
+        <h2 className="text-lg font-medium mt-3 dark:text-white">
+          Web application engineer
+        </h2>
+        <div className="text-base text-slate-500 mt-4 dark:text-slate-400">
           <p className="max-w-xs">
             I am a web application engineer in Tokyo. I love product development
             and I am interested in the process of creating products that people
@@ -31,7 +33,7 @@ export default function Home() {
             <a
               href="https://github.com/kakudenbuzo"
               target="_blank"
-              className="text-slate-600 hover:text-black"
+              className="text-slate-600 hover:text-black dark:text-slate-400 dark:hover:text-white"
             >
               <FontAwesomeIcon size="2x" icon={faGithub} />
             </a>
@@ -40,7 +42,7 @@ export default function Home() {
             <a
               href="https://www.linkedin.com/in/musashi-tsunoda/"
               target="_blank"
-              className="text-slate-600 hover:text-black"
+              className="text-slate-600 hover:text-black dark:text-slate-400 dark:hover:text-white"
             >
               <FontAwesomeIcon size="2x" icon={faLinkedin} />
             </a>
@@ -49,7 +51,7 @@ export default function Home() {
       </header>
       <section className="pt-24">
         <h2
-          className="py-4 text-lg font-bold uppercase mb-4 sticky top-0 backdrop-blur bg-slate-50/50 -mx-6 px-6"
+          className="py-4 text-lg font-bold uppercase mb-4 sticky top-0 backdrop-blur bg-slate-50/50 -mx-6 px-6 dark:bg-black/50 dark:text-white"
           id="experience"
         >
           Work experience
@@ -66,7 +68,7 @@ export default function Home() {
       </section>
       <section className="pt-24">
         <h2
-          className="py-4 text-lg font-bold uppercase mb-4 sticky top-0 backdrop-blur bg-slate-50/50 -mx-6 px-6"
+          className="py-4 text-lg font-bold uppercase mb-4 sticky top-0 backdrop-blur bg-slate-50/50 -mx-6 px-6 dark:bg-black/50 dark:text-white"
           id="project"
         >
           Personal project
@@ -81,8 +83,8 @@ export default function Home() {
           ))}
         </ul>
       </section>
-      <footer className="mt-24 text-slate-500 text-center">
-        <span className="hover:text-black underline">
+      <footer className="mt-24 text-slate-500 text-center dark:text-slate-400">
+        <span className="hover:text-black underline dark:hover:text-white">
           <a href="https://github.com/kakudenbuzo/portfolio" target="_blank">
             <FontAwesomeIcon size="sm" icon={faGithub} className="mr-1" />
             Source code
