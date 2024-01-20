@@ -2,7 +2,7 @@
     "theme_color": "#000000",
     "background_color": "#f8fafc",
     "display": "standalone",
-    "scope": "/",
+    "scope": "/portfolio/",
     "start_url": "https://kakudenbuzo.github.io/portfolio/",
     "name": "kakudenbuzo's portfolio",
     "short_name": "kakudenbuzo",
