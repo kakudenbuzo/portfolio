@@ -2,6 +2,24 @@ import { WorkExperience } from "@/components/work-experience-item";
 
 export const workExperiences: WorkExperience[] = [
   {
+    duration: "Aug. 2023 - Present",
+    role: "Web application engineer",
+    companyName: "Commune",
+    description: [
+      'Development of "commmune", a platform that strongly supports community startups and drives successful customer success.'
+    ],
+    link: "https://commune.us/",
+    skills: [
+      "TypeScript",
+      "Node.js",
+      "React",
+      "Next.jp",
+      "MySQL",
+      "Docker",
+      "GCP"
+    ],
+  },
+  {
     duration: "Apr. 2021 - Mar. 2023",
     role: "Full-stack Developer",
     companyName: "e-ize Co. Ltd.",
