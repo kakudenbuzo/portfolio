@@ -10,10 +10,10 @@ export type WorkExperience = {
   readonly   link: string;
   readonly  skills: string[];
 };
-interface MyComponentProps {
-  workExperience: WorkExperience;
+type props ={
+  readonly workExperience: WorkExperience;
 }
-const WorkExperienceItem: React.FC<MyComponentProps> = ({ workExperience }) => {
+const WorkExperienceItem: React.FC<props> = ({ workExperience }) => {
   const [showMore, setShowMore] = useState(false);
   const showMoreHandler = () => {
     setShowMore(true);

@@ -11,11 +11,10 @@ export type PersonalProject = {
   readonly  link: string;
   readonly  skills: string[];
  };
-interface MyComponentProps {
-  personalProject: PersonalProject;
+type props ={
+  readonly personalProject: PersonalProject;
 }
-
-const PersonalProjectItem: React.FC<MyComponentProps> = ({
+const PersonalProjectItem: React.FC<props> = ({
   personalProject,
 }) => {
   return (
