@@ -2,6 +2,14 @@ import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 
+export type WorkExperience = {
+  readonly duration: string;
+  readonly role: string;
+  readonly  companyName: string;
+  readonly  description: string[];
+  readonly   link: string;
+  readonly  skills: string[];
+};
 interface MyComponentProps {
   workExperience: WorkExperience;
 }
@@ -57,26 +65,3 @@ const WorkExperienceItem: React.FC<MyComponentProps> = ({ workExperience }) => {
 };
 export default WorkExperienceItem;
 
-export class WorkExperience {
-  duration: string = "";
-  role: string = "";
-  companyName: string = "";
-  description: string[] = [""];
-  link: string = "";
-  skills: string[] = [];
-  constructor(
-    duration: string,
-    role: string,
-    companyName: string,
-    description: string[],
-    link: string,
-    skills: string[]
-  ) {
-    this.duration = duration;
-    this.role = role;
-    this.companyName = companyName;
-    this.description = description;
-    this.link = link;
-    this.skills = skills;
-  }
-}

@@ -3,6 +3,14 @@
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+export type PersonalProject = {
+  readonly imagePath: string;
+  readonly  name: string;
+  readonly  type: string;
+  readonly  description: string[];
+  readonly  link: string;
+  readonly  skills: string[];
+ };
 interface MyComponentProps {
   personalProject: PersonalProject;
 }
@@ -48,26 +56,3 @@ const PersonalProjectItem: React.FC<MyComponentProps> = ({
 };
 export default PersonalProjectItem;
 
-export class PersonalProject {
-  imagePath: string = "";
-  name: string = "";
-  type: string = "";
-  description: string[] = [""];
-  link: string = "";
-  skills: string[] = [];
-  constructor(
-    imagePath: string,
-    name: string,
-    type: string,
-    description: string[],
-    link: string,
-    skills: string[]
-  ) {
-    this.imagePath = imagePath;
-    this.name = name;
-    this.type = type;
-    this.description = description;
-    this.link = link;
-    this.skills = skills;
-  }
-}

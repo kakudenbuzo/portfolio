@@ -1,11 +1,11 @@
 import { WorkExperience } from "@/components/work-experience-item";
 
-export const workExperiences = [
-  new WorkExperience(
-    "Apr. 2021 - Mar. 2023",
-    "Full-stack Developer",
-    "e-ize Co. Ltd.",
-    [
+export const workExperiences: WorkExperience[] = [
+  {
+    duration: "Apr. 2021 - Mar. 2023",
+    role: "Full-stack Developer",
+    companyName: "e-ize Co. Ltd.",
+    description: [
       "I worked as a full-stack engineer on a service that made it easy to build e-commerce sites from the web.",
       " I worked in a team of 3-5 engineers, designing, developing, testing, and maintaining the service " +
         "for both the front-end and back-end.",
@@ -15,8 +15,8 @@ export const workExperiences = [
       "・Automation of back-end and front-end deployments using GitHub Actions.",
       "・Development of batches, such as subscription purchase processing.",
     ],
-    "https://e-ize.jp/",
-    [
+    link: "https://e-ize.jp/",
+    skills: [
       "Java",
       "JavaScript",
       "Spring Boot",
@@ -24,19 +24,18 @@ export const workExperiences = [
       "Nuxt.js",
       "MySQL",
       "Docker",
-    ]
-  ),
-  new WorkExperience(
-    "Dec. 2019 - Mar. 2021",
-    "Internship",
-    "e-ize Co. Ltd.",
-    [
+    ],
+  },
+  {
+    duration: "Dec. 2019 - Mar. 2021",
+    role: "Internship",
+    companyName: "e-ize Co. Ltd.",
+    description: [
       "As my first experience as a software engineer, I worked as an intern while I was finishing my master's degree.",
-
       "I worked on the front-end and back-end of the service.",
     ],
-    "https://e-ize.jp/",
-    [
+    link: "https://e-ize.jp/",
+    skills: [
       "Java",
       "JavaScript",
       "Spring Boot",
@@ -44,6 +43,6 @@ export const workExperiences = [
       "Nuxt.js",
       "MySQL",
       "Docker",
-    ]
-  ),
+    ],
+  },
 ];
