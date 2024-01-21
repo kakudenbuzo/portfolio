@@ -14,7 +14,7 @@ export type PersonalProject = {
 type props ={
   readonly personalProject: PersonalProject;
 }
-const PersonalProjectItem: React.FC<props> = ({
+export const PersonalProjectItem: React.FC<props> = ({
   personalProject,
 }) => {
   return (
@@ -53,5 +53,4 @@ const PersonalProjectItem: React.FC<props> = ({
     </div>
   );
 };
-export default PersonalProjectItem;
 

@@ -13,7 +13,7 @@ export type WorkExperience = {
 type props ={
   readonly workExperience: WorkExperience;
 }
-const WorkExperienceItem: React.FC<props> = ({ workExperience }) => {
+export const WorkExperienceItem: React.FC<props> = ({ workExperience }) => {
   const [showMore, setShowMore] = useState(false);
   const showMoreHandler = () => {
     setShowMore(true);
@@ -63,5 +63,4 @@ const WorkExperienceItem: React.FC<props> = ({ workExperience }) => {
     </div>
   );
 };
-export default WorkExperienceItem;
 

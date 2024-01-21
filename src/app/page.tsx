@@ -1,6 +1,6 @@
 "use client";
-import PersonalProjectItem from "@/components/personal-project-item";
-import WorkExperienceItem from "@/components/work-experience-item";
+import {PersonalProjectItem} from "@/components/personal-project-item";
+import {WorkExperienceItem} from "@/components/work-experience-item";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import "@fortawesome/fontawesome-svg-core/styles.css";
