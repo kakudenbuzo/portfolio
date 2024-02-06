@@ -38,4 +38,4 @@ export const personalProjects: PersonalProject[] = [
     link: "https://apps.apple.com/us/app/cupertino-catalog/id1665329294",
     skills: ["Dart", "Flutter", "SQLite"]
   },
-];
+] as const;
