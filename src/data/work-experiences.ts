@@ -63,4 +63,4 @@ export const workExperiences: WorkExperience[] = [
       "Docker",
     ],
   },
-];
+] as const;
