@@ -31,8 +31,8 @@ export const personalProjects: PersonalProject[] = [
     name: "Cupertino catalog",
     type: "Chrome extension",
     description: [
-      "Cupertiono catalog is a mobile app for Flutter developers.",
-      "You can brawse Cupertino widgets and their code examples.",
+      "Cupertino catalog is a mobile app for Flutter developers.",
+      "You can browse Cupertino widgets and their code examples.",
       "Cupertino widgets are iOS-style widgets for Flutter.",
     ],
     link: "https://apps.apple.com/us/app/cupertino-catalog/id1665329294",
