@@ -21,7 +21,7 @@ export const personalProjects: PersonalProject[] = [
     description: [
       "Mokuren is a Chrome extension for GitHub.",
       "You can open the issue page in a sidebar.",
-      "I developed it with my firiends.",
+      "I developed it with my friends.",
     ],
     link: "https://chrome.google.com/webstore/detail/mokuren-for-github/nikennffbfoadbajdgnhlngjahofhdef",
     skills: ["TypeScript", "Vue.js", "GCP", "Cypress"]
