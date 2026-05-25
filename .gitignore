@@ -34,5 +34,11 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# workbox (auto-generated, contains local paths)
+# workbox / PWA (auto-generated)
+public/sw.js
 public/sw.js.map
+public/workbox-*.js
+public/workbox-*.js.map
+
+# Claude Code local data
+.claude/
