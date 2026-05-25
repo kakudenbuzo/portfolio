@@ -33,3 +33,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# workbox (auto-generated, contains local paths)
+public/sw.js.map
