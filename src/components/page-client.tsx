@@ -7,6 +7,7 @@ import { Hero } from "@/components/hero";
 import { SummarySection } from "@/components/summary-section";
 import { WorkSection } from "@/components/work-section";
 import { EducationSection } from "@/components/education-section";
+import { CertificationsSection } from "@/components/certifications-section";
 import { ProjectsSection } from "@/components/projects-section";
 import { ZennSection } from "@/components/zenn-section";
 import type { ZennArticle } from "@/components/zenn-section";
@@ -36,6 +37,7 @@ export function PageClient({ articles }: { articles: ZennArticle[] }) {
         <SummarySection />
         <WorkSection />
         <EducationSection />
+        <CertificationsSection />
         <ProjectsSection />
         <ZennSection articles={articles} />
         <Footer />

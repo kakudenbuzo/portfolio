@@ -23,6 +23,7 @@ export const translations = {
       summary: "Professional Summary",
       experience: "Work Experience",
       education: "Education",
+      certifications: "Certifications",
       projects: "Projects",
       articles: "Articles",
     },
@@ -48,6 +49,7 @@ export const translations = {
       summary: "職務要約",
       experience: "職歴",
       education: "学歴",
+      certifications: "資格",
       projects: "個人プロジェクト",
       articles: "Zenn記事",
     },
@@ -62,7 +64,7 @@ type Translations = {
   summary: string;
   contact: { location: string; email: string };
   nav: { about: string; experience: string; projects: string; articles: string };
-  sections: { summary: string; experience: string; education: string; projects: string; articles: string };
+  sections: { summary: string; experience: string; education: string; certifications: string; projects: string; articles: string };
   sourceCode: string;
   copyright: string;
 };
