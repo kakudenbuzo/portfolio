@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,18 @@ export default function RootLayout({
       </head>
       <body className={inter.className + " bg-gray-100"}>
         {children}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-3WW2G4V0L7"
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-3WW2G4V0L7');
+          `}
+        </Script>
       </body>
     </html>
   );
